@@ -6,10 +6,8 @@ project(cpp_template)
 find_package(fmt CONFIG REQUIRED)
 
 # main target
-add_executable(main)
-target_sources(main PRIVATE src/main.cpp)
-target_link_libraries(main PRIVATE fmt::fmt-header-only)
-set_property(TARGET main PROPERTY CXX_STANDARD 20)
+add_subdirectory(src/hello hello)
+add_subdirectory(src/hello_library hello_library)
 
 enable_testing()
 # tests target
