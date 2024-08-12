@@ -6,6 +6,7 @@ project(cpp_template)
 find_package(fmt CONFIG REQUIRED)
 
 # main target
+add_subdirectory(src/coost coost)
 add_subdirectory(src/hello hello)
 add_subdirectory(src/hello_library hello_library)
 
