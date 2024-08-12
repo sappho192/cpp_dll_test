@@ -1,3 +1,6 @@
 [submodule "vcpkg"]
 	path = vcpkg
 	url = https://github.com/microsoft/vcpkg.git
+[submodule "src/coost"]
+	path = src/coost
+	url = https://github.com/idealvin/coost
